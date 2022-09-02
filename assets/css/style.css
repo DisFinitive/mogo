@@ -1041,7 +1041,7 @@ li {
 
 .map__title {
 	text-transform: uppercase;
-	font-style: 24px;
+	font-size: 24px;
 	color: #f38181;
 	font-weight: 700;
 }
