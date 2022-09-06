@@ -149,6 +149,10 @@ li {
 	transition: color .1s linear;
 }
 
+.nav__link--active {
+	color: #fce38a;
+}
+
 .nav__link:after {
 	content: "";
 	display: block;
@@ -177,10 +181,6 @@ li {
 
 }
 
-.nav__link--active {
-	color: #fce38a;
-}
-
 
 /* Nav toggel */
 
@@ -203,6 +203,11 @@ li {
 	z-index: 1;
 }
 
+
+.nav-toggle:focus {
+	outline: none;
+}
+
 .nav-toggle__item {
 	display: block;
 	width: 100%;
@@ -217,7 +222,7 @@ li {
 
 	background: #fff;
 
-	transition: background .2 linear;
+	transition: background .2s linear;
 }
 
 .nav-toggle--active .nav-toggle__item {
@@ -237,7 +242,7 @@ li {
 
 	background: #fff;
 
-	transition: transform .2 linear;
+	transition: transform .2s linear;
 }
 
 .nav-toggle__item:after {
@@ -253,7 +258,7 @@ li {
 
 	background: #fff;
 
-	transition: transform .2 linear;
+	transition: transform .2s linear;
 }
 
 .nav-toggle--active .nav-toggle__item:before {
@@ -359,6 +364,10 @@ li {
 
 .section--gray {
 	background-color: #f8f8f8;
+}
+
+.section--slider {
+	margin: -50px 0 0 0;
 }
 
 .section--clients {
@@ -690,13 +699,12 @@ li {
 
 .reviews {
 	position: relative;
-	padding: 0 110px;
 }
 
 .reviews__item {
-	margin: -50px 0 0 0;
 	position: relative;
 	padding: 0 0 0 245px;
+	min-height: 210px;
 }
 
 .reviews__img {
@@ -732,16 +740,29 @@ li {
 	background-color: #f38181;
 }
 
-.reviews__btn {
+.slick-slider {
+	padding: 0 110px;
+}
+
+.slick-arrow {
+	border: 0;
+	background: none;
+
 	font-size: 0;
 	color: transparent;
+	cursor: pointer;
+
 	top: 50%;
 	position: absolute;
 	transform: translateY(-50%);
 	z-index: 2;
 }
 
-.reviews__btn:after {
+.slick-arrow:focus {
+	outline: none;
+}
+
+.slick-arrow:after {
 	content: "";
 	display: block;
 	width: 16px;
@@ -752,12 +773,12 @@ li {
 
 }
 
-.reviews__btn-prev {
+.slick-prev {
 	left: 0;
 	transform: rotate(-45deg);
 }
 
-.reviews__btn-next {
+.slick-next {
 	right: 0;
 	transform: rotate(135deg);
 }
@@ -943,6 +964,7 @@ li {
 
 .blog__item {
 	width: 33.333%;
+	padding: 0 10px;
 }
 
 .blog__header {
@@ -1357,7 +1379,7 @@ li {
 	}
 
 	/* Reviews */
-	.reviews {
+	.slick-slider {
 		padding: 0 60px;
 	}
 
@@ -1432,6 +1454,10 @@ li {
 		left: 0;
 
 		background: #e88182;
+	}
+
+	.nav--active {
+		display: block;
 	}
 
 	.nav__link {
@@ -1609,7 +1635,7 @@ li {
 	}
 
 	/* Reviews */
-	.reviews {
+	.slick-slider {
 		padding: 0 35px;
 	}
 
