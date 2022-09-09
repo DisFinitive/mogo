@@ -571,7 +571,7 @@ li {
 	font-size: 14px;
 	text-transform: uppercase;
 }
-.services_text {
+.services__text {
 	color: #999;
 	font-family: 'Roboto', sans-serif;
 
@@ -1114,7 +1114,7 @@ li {
 	margin: 0 0 30px 0;
 }
 
-.footer_title {
+.footer__title {
 	margin: 30px 0;
 	font-size: 14px;
 	text-transform: uppercase;
